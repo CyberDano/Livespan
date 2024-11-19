@@ -1,8 +1,8 @@
-//
-//  CalculatedTimeViewController.swift
-//  Livespan
-//
-//  Created by Alumnos on 19/11/24.
-//
+import UIKit
 
-import Foundation
+class CalculatedTimeViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+}

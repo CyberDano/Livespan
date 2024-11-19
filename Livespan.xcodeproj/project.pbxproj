@@ -16,6 +16,7 @@
 		7FA7BF852CEC9CF300D64784 /* LivespanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7BF842CEC9CF300D64784 /* LivespanTests.swift */; };
 		7FA7BF8F2CEC9CF300D64784 /* LivespanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7BF8E2CEC9CF300D64784 /* LivespanUITests.swift */; };
 		7FA7BF912CEC9CF300D64784 /* LivespanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7BF902CEC9CF300D64784 /* LivespanUITestsLaunchTests.swift */; };
+		7FA7BF9E2CECA7C600D64784 /* CalculatedTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7BF9D2CECA7C600D64784 /* CalculatedTimeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7FA7BF8A2CEC9CF300D64784 /* LivespanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivespanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA7BF8E2CEC9CF300D64784 /* LivespanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivespanUITests.swift; sourceTree = "<group>"; };
 		7FA7BF902CEC9CF300D64784 /* LivespanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivespanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7FA7BF9D2CECA7C600D64784 /* CalculatedTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedTimeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				7FA7BF762CEC9CF200D64784 /* Assets.xcassets */,
 				7FA7BF782CEC9CF200D64784 /* LaunchScreen.storyboard */,
 				7FA7BF7B2CEC9CF200D64784 /* Info.plist */,
+				7FA7BF9D2CECA7C600D64784 /* CalculatedTimeViewController.swift */,
 			);
 			path = Livespan;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FA7BF722CEC9CF000D64784 /* ViewController.swift in Sources */,
+				7FA7BF9E2CECA7C600D64784 /* CalculatedTimeViewController.swift in Sources */,
 				7FA7BF6E2CEC9CF000D64784 /* AppDelegate.swift in Sources */,
 				7FA7BF702CEC9CF000D64784 /* SceneDelegate.swift in Sources */,
 			);
