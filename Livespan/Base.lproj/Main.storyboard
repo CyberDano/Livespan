@@ -76,6 +76,7 @@
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
                     <connections>
+                        <outlet property="CalcButton" destination="cqU-wR-lW8" id="FxS-5x-fSe"/>
                         <outlet property="SleepHours" destination="kxP-Iw-DcM" id="Jqn-AE-ZkV"/>
                         <outlet property="SleepSlider" destination="RIi-MZ-ppf" id="qZ4-Lm-Uk8"/>
                         <outlet property="WorkHours" destination="dSY-c1-CPW" id="rYs-Kb-rxa"/>
@@ -109,7 +110,7 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
