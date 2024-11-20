@@ -39,6 +39,14 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="- years" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYU-E2-lDS">
+                                <rect key="frame" x="76" y="316" width="240" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="8" minValue="0.0" maxValue="24" translatesAutoresizingMaskIntoConstraints="NO" id="RIi-MZ-ppf">
                                 <rect key="frame" x="96" y="545" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -69,24 +77,41 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Calculate"/>
                                 <connections>
                                     <action selector="CalculateTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="85L-nz-okG"/>
+                                    <segue destination="sFC-Gf-MVd" kind="modal" identifier="CalcTime" id="45c-TH-hZX"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="How old are you?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OX9-8b-TES">
+                                <rect key="frame" x="76" y="231" width="240" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="18" minValue="0.0" maxValue="127" translatesAutoresizingMaskIntoConstraints="NO" id="8OY-aW-sZG">
+                                <rect key="frame" x="96" y="279" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="SaveAgealue:" destination="BYZ-38-t0r" eventType="valueChanged" id="XIO-Tp-UZ1"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
                     <connections>
+                        <outlet property="AgeSlider" destination="8OY-aW-sZG" id="EXk-FO-oBk"/>
                         <outlet property="CalcButton" destination="cqU-wR-lW8" id="FxS-5x-fSe"/>
                         <outlet property="SleepHours" destination="kxP-Iw-DcM" id="Jqn-AE-ZkV"/>
                         <outlet property="SleepSlider" destination="RIi-MZ-ppf" id="qZ4-Lm-Uk8"/>
                         <outlet property="WorkHours" destination="dSY-c1-CPW" id="rYs-Kb-rxa"/>
-                        <outlet property="WorkSlider" destination="ww8-bd-rLK" id="8kk-e8-ciw"/>
-                        <segue destination="sFC-Gf-MVd" kind="push" identifier="CalculateTime" id="ZVK-tY-Qyl"/>
+                        <outlet property="WorkSlider" destination="ww8-bd-rLK" id="vfT-xV-yak"/>
+                        <outlet property="YearsOld" destination="hYU-E2-lDS" id="vSD-gJ-lRh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112" y="-27"/>
+            <point key="canvasLocation" x="110.68702290076335" y="-27.464788732394368"/>
         </scene>
         <!--CalculatedTimeViewController-->
         <scene sceneID="n8M-QD-X0x">
@@ -95,14 +120,27 @@
                     <view key="view" contentMode="scaleToFill" id="ney-3d-eoI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Based on the retirement age (65) and in your work and sleep time per day: You have " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOW-OM-s5R">
+                                <rect key="frame" x="55" y="338" width="282" height="167"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bIo-MM-Ppk"/>
                         <color key="backgroundColor" systemColor="systemMintColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="wnB-jx-vgC"/>
+                    <connections>
+                        <outlet property="CalculatedTime" destination="VOW-OM-s5R" id="yZL-dr-m2S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mK5-nG-mQI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966" y="-27"/>
+            <point key="canvasLocation" x="965.64885496183206" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
